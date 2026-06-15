@@ -1,0 +1,109 @@
+.produtos-section {
+  font-family: "Nunito", Arial, sans-serif;
+  background-color: var(--bg-color);
+  text-align: center;
+  padding: 6rem var(--px-lg) var(--py-xl);
+}
+
+.produtos-titulo {
+  font-family: var(--ff-display);
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.produtos-subtitulo {
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: var(--fs-base);
+  color: var(--second-text-color);
+  margin-bottom: 3rem;
+}
+  
+.produto-nome {
+  font-family: "Nunito";
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  color: var(--primary-color);
+  margin: 0;
+}
+
+
+.produtos-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+
+.produto-card {
+  background-color: var(--accent-color);
+  border-radius: 20px;
+  padding: 1rem;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.produto-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(203, 45, 121, 0.15);
+}
+
+.produto-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.produtos-cta {
+  position: relative;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.btn-encomendar {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--bg-secondary-color);
+  color: var(--light-text-color) !important;
+  font-family: var(--ff-display);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  padding: 0.875rem 2.25rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.btn-novelo {
+  width: 150px;
+  height: 90px;
+  position: absolute;
+  right: -73px;
+  bottom: -20px;
+}
+
+@media (max-width: 768px) {
+  .produtos-titulo {
+    font-size: var(--fs-xl);
+  }
+
+  .produtos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produto-card {
+    width: 90%;
+    max-width: 320px;
+  }
+}

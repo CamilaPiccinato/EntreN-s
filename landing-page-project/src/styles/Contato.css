@@ -1,0 +1,118 @@
+
+
+.contato-section {
+  background-color: var(--bg-color);
+  padding: var(--py-xl) var(--px-lg);
+  display: flex;
+  justify-content: center;
+}
+
+.contato-inner {
+  width: 100%;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.contato-eyebrow {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contato-titulo {
+  font-family: var(--ff-display);
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  color: var(--text-color);
+  margin: 0;
+}
+
+.contato-descricao {
+  color: var(--second-text-color);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  max-width: 460px;
+  margin-bottom: 1rem;
+}
+
+.contato-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contato-input,
+.contato-textarea {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 1.5px solid var(--accent-color);
+  border-radius: 12px;
+  background-color: #fff;
+  font-size: var(--fs-base);
+  color: var(--text-color);
+  outline: none;
+  transition: border-color 0.2s ease;
+  resize: none;
+}
+
+.contato-input:focus,
+.contato-textarea:focus {
+  border-color: var(--primary-color);
+}
+
+.contato-input::placeholder,
+.contato-textarea::placeholder {
+  color: #bbb;
+}
+
+.contato-btn {
+  align-self: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-family: var(--ff-display);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  padding: 0.875rem 3rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.contato-btn:hover:not(:disabled) {
+  background-color: var(--hero-pink);
+  transform: scale(1.03);
+}
+
+.contato-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.contato-feedback {
+  font-size: var(--fs-sm);
+  text-align: center;
+}
+
+.contato-erro {
+  color: #e05;
+}
+
+.contato-sucesso {
+  color: var(--primary-color);
+  font-weight: var(--fw-bold);
+}
+
+@media (max-width: 768px) {
+  .contato-titulo {
+    font-size: var(--fs-xl);
+  }
+}

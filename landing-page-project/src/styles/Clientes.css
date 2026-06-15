@@ -1,0 +1,129 @@
+
+.clientes-section {
+  background-color: var(--bg-color);
+  padding: var(--py-xl) var(--px-lg);
+  text-align: center;
+}
+
+.clientes-header {
+  margin-bottom: 3rem;
+}
+
+.clientes-titulo {
+  font-family: var(--ff-display);
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.clientes-brilhinho {
+  width: 65px;
+  height: 65px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.clientes-subtitulo {
+  font-size: var(--fs-base);
+  color: var(--second-text-color);
+}
+
+.clientes-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 3rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 0.5rem;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+  transform: scale(1.2);
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.clientes-card {
+  background-color: var(--accent-color);
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card-ativo {
+  width: 280px;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.card-lateral {
+  width: 240px;
+  opacity: 0.6;
+  transform: scale(0.95);
+}
+
+.clientes-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.clientes-depoimento {
+  font-size: var(--fs-sm);
+  color: var(--text-color);
+  text-align: left;
+  line-height: 1.5;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dot-ativo {
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .card-lateral {
+    display: none;
+  }
+
+  .clientes-titulo {
+    font-size: var(--fs-xl);
+  }
+}
