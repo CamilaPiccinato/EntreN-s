@@ -13,6 +13,8 @@ import Blusa from "../assets/blusa.svg";
 import Bolsa from "../assets/bolsa.svg";
 import Amigurumi from "../assets/amigurumi.svg";
 import Brilhinho from "../assets/brilhinho.svg";
+import Footer from "../components/Footer";
+import "../styles/footer.css";
 
 export default function Home() {
     return (
@@ -33,6 +35,9 @@ export default function Home() {
                 brilhinho={Brilhinho}
             />
             <Contato />
+            
+            <Footer />
+            
         </main>
     );
 }

@@ -44,7 +44,7 @@ function Contato() {
         <h2 className="contato-titulo">Entre em contato</h2>
         <p className="contato-descricao">
           Tem alguma dúvida sobre encomendas, prazos ou modelos?
-          Me manda uma mensagem — respondo com carinho! 🧶
+          Me manda uma mensagem, respondo com carinho! 🧶
         </p>
         <div className="contato-form">
           <input
