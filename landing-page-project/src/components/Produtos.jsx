@@ -1,7 +1,13 @@
-
 import "../styles/Produtos.css";
 
-function Produtos({ foto1, foto2, foto3, novelo }) {
+interface ProdutosProps {
+  foto1: string;
+  foto2: string;
+  foto3: string;
+  novelo: string;
+}
+
+function Produtos({ foto1, foto2, foto3, novelo }: ProdutosProps) {
   const whatsappLink = 'https://wa.me/5545999373056?text=Olá! Gostaria de fazer uma encomenda.';
 
   const produtos = [
@@ -14,28 +20,17 @@ function Produtos({ foto1, foto2, foto3, novelo }) {
     <section id="produtos" className="produtos-section">
       <h2 className="produtos-titulo">Principais produtos</h2>
       <p className="produtos-subtitulo">Os favoritos das clientes!</p>
-
       <div className="produtos-grid">
         {produtos.map((produto) => (
           <div key={produto.id} className="produto-card">
-            <img
-              src={produto.imagem}
-              alt={produto.nome}
-              className="produto-img"
-            />
+            <img src={produto.imagem} alt={produto.nome} className="produto-img" />
             <p className="produto-nome">{produto.nome}</p>
           </div>
         ))}
       </div>
-
       <div className="produtos-cta">
-        <a
-          href={whatsappLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-encomendar"
-        >
-          Quero encomendar! 
+        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-encomendar">
+          Quero encomendar!
           <img src={novelo} alt="" aria-hidden="true" className="btn-novelo" />
         </a>
       </div>
