@@ -1,16 +1,10 @@
 [build]
   base = "landing-page-project"
   command = "npm run build"
-  publish = "landing-page-project/dist"
+  publish = "dist"
 
 [functions]
-  directory = "landing-page-project/netlify/functions"
-
-[dev]
-  command = "npm run dev"
-  targetPort = 5173
-  port = 8888
-  autoLaunch = false
+  directory = "netlify/functions"
 
 [[redirects]]
   from = "/api/*"
