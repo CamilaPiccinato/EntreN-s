@@ -34,7 +34,7 @@ function Contato() {
       <div className="contato-inner">
         <p className="contato-eyebrow">Envie sua dúvida</p>
         <h2 className="contato-titulo">Entre em contato</h2>
-        <p className="contato-descricao">Tem alguma dúvida sobre encomendas, prazos ou modelos? Me manda uma mensagem — respondo com carinho! 🧶</p>
+        <p className="contato-descricao">Tem alguma dúvida sobre encomendas, prazos ou modelos? Me manda uma mensagem, respondo com carinho! 🧶</p>
         <div className="contato-form">
           <input className="contato-input" type="email" placeholder="Seu melhor e-mail" value={email} onChange={(e) => setEmail(e.target.value)} />
           <textarea className="contato-textarea" placeholder="Motivo do contato. Ex: Gostaria de encomendar um amigurumi personalizado!" value={message} onChange={(e) => setMessage(e.target.value)} rows={4} />
