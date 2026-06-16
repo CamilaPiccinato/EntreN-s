@@ -48,7 +48,7 @@ function Clientes({ blusa, bolsa, amigurumi, brilhinho }) {
   ];
 
   return (
-    <section className="clientes-section">
+   <section id="clientes" className="clientes-section">
       <div className="clientes-header">
         <h2 className="clientes-titulo">
           Peças que já encontraram um novo lar

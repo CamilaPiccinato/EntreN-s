@@ -11,7 +11,7 @@ function Produtos({ foto1, foto2, foto3, novelo }) {
   ];
 
   return (
-    <section className="produtos-section">
+    <section id="produtos" className="produtos-section">
       <h2 className="produtos-titulo">Principais produtos</h2>
       <p className="produtos-subtitulo">Os favoritos das clientes!</p>
 

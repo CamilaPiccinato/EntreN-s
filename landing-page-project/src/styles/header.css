@@ -14,20 +14,24 @@
   display: initial;
   z-index: 3;
 }
+
 nav {
-    display: flex;
-    align-items: center;
-    gap: 19rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
+
 .Logo {
-    width: 180px;
-    height: auto;
-    margin-left: -150px;
+  width: 140px;
+  height: auto;
+  margin-left: 0;
 }
 
 .desktop-only ul {
-    gap: 2rem;
+  gap: 2rem;
 }
+
 .mobile-menu-content {
   position: absolute;
   display: flex;
@@ -59,8 +63,18 @@ nav {
     justify-content: flex-end;
   }
 
+  nav {
+    gap: 19rem;
+    justify-content: flex-start;
+  }
+
   nav > img {
     display: initial;
+  }
+
+  .Logo {
+    width: 180px;
+    margin-left: -150px;
   }
 
   .mobile-menu {
@@ -70,8 +84,4 @@ nav {
   .mobile-menu-content {
     display: none;
   }
-}
-
-#logo {
-    background: rgb(9, 76, 54);
 }

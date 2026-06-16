@@ -16,7 +16,7 @@ const corsHeaders = (origin: string) => ({
 
 const handler: Handler = async (event: HandlerEvent) => {
   const origin = event.headers["origin"] ?? "";
-  // ...
+  
     if (event.httpMethod === "OPTIONS") {
     return {
       statusCode: 204,
