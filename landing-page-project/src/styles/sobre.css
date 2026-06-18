@@ -132,7 +132,7 @@
 }
 @media (max-width: 768px) {
   .como-titulo {
-    margin-left: 0; /* remove o margin-left: 25rem fixo */
+    margin-left: 0; 
     font-size: var(--fs-xl);
     margin-bottom: 1.5rem;
   }
@@ -144,7 +144,7 @@
   }
 
   .como-cards {
-    grid-template-columns: 1fr 1fr; /* 2 colunas no mobile médio */
+    grid-template-columns: 1fr 1fr; 
     padding: 0 1rem;
     gap: 1rem;
   }

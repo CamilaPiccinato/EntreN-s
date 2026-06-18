@@ -62,6 +62,7 @@ const handler: Handler = async (event: HandlerEvent) => {
       body: JSON.stringify({ error: "E-mail inválido." }),
     };
   }
+  
     const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: Number(process.env.SMTP_PORT ?? 587),

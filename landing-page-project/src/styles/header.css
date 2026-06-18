@@ -6,10 +6,6 @@
   color: var(--second-text-color);
 }
 
-.ml-lg {
-  margin-right: 2.875rem;
-}
-
 .mobile-menu {
   display: initial;
   z-index: 3;
